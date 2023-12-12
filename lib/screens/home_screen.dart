@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:instagram/theme/mine_app_bar.dart';
 import 'package:instagram/theme/mine_bottom_bar.dart';
+import 'package:instagram/widgets/post/post.dart';
 import 'package:instagram/widgets/story/story_section.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -14,7 +15,22 @@ const HomeScreen({super.key});
       body: ListView(
         children: const [
 
+          // Story Section
           StorySection(),
+
+          // Divider
+          Divider(),
+
+          // Post Section
+          Column(
+            children: [
+              Post()
+            ]
+          )
+
+
+
+
 
         ]
       ),
